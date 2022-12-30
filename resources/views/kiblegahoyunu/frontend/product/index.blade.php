@@ -60,8 +60,6 @@
                             <div class="mb-2">
                                 <ul class="font-size-14 pl-3 ml-1 text-gray-110">
                                     {!! $Detay->short !!}
-
-
                                     <span>
                                         <i class="fa fa-eye"></i> Bugün <b>({{$Count}})</b> kişi baktı<br>
                                         <i class="ec ec-transport mr-1"></i> Aynı gün kargoda<br>

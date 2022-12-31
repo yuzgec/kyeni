@@ -175,23 +175,10 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a  href="{{ route('home') }}" class="btn btn-primary-dark-w btn-block btn-pill font-size-20 mb-3 py-3">Anasayfaya Dön</a>
+                            <a  href="{{ route('home') }}" class="btn btn-primary-dark-w btn-block btn-pill font-size-20 mb-3 py-3 text-white">Anasayfaya Dön</a>
                         </div>
                     </div>
             </div>
         </div>
     </div>
-    @endsection
-
-@section('CustomJs')
-    <!-- Global site tag (gtag.js) - Google Ads: 10885450163 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10885450163"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'AW-10885450163');
-    </script>
-
     @endsection

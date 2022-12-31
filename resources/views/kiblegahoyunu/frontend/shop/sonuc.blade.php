@@ -96,10 +96,11 @@
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '884071942125527');
+        fbq('init', '{{ config('settings.facebookPixel') }}');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"  src="https://www.facebook.com/tr?id=884071942125527&ev=PageView&noscript=1"/></noscript>
+    <noscript><img height="1" width="1" style="display:none"  src="https://www.facebook.com/tr?id={{ config('settings.facebookPixel') }}&ev=PageView&noscript=1"/></noscript>
+
     <script>fbq('track', 'Purchase', {value: 1, currency: 'TRY'});</script>
     @endsection
 @section('content')
@@ -126,7 +127,7 @@
                                 99.90₺ değerindeki <b>Görsel Zeka ve Gelişim Kavram Kartları Oyununu</b> almaya hak kazandınız adres teyidi ve sipariş onayı için müşteri temsilcisi arkadaşımız saat 10:00 - 20:00 saatleri arasında <b>0 212 945 26 00</b> numaralı telefondan sizleri arayacaktır. Lütfen telefonunuzu açınız. <br>Adres teyidi alınmayan siparişler  kargoya verilmeyecektir.
                             </p>--}}
                             <table class="table">
-                                <thead>
+                              {{--  <thead>
                                 <tr>
                                     <th class="product-name">Ürün Adı</th>
                                     <th class="product-total">Fiyat</th>
@@ -139,7 +140,7 @@
                                     <td>{{ money($item->qty *  $item->price) }}₺</td>
                                 </tr>
                                 @endforeach
-                                </tbody>
+                                </tbody>--}}
                                {{-- <tfoot>
                                 <tr>
                                     <th>Ara Toplam</th>

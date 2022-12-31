@@ -96,10 +96,11 @@
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '884071942125527');
+        fbq('init', '{{ config('settings.facebookPixel') }}');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"  src="https://www.facebook.com/tr?id=884071942125527&ev=PageView&noscript=1"/></noscript>
+    <noscript><img height="1" width="1" style="display:none"  src="https://www.facebook.com/tr?id={{ config('settings.facebookPixel') }}&ev=PageView&noscript=1"/></noscript>
+
     <script>fbq('track', 'Purchase', {value: 1, currency: 'TRY'});</script>
     @endsection
 @section('content')

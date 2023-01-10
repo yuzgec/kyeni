@@ -6,6 +6,9 @@
         {!! OpenGraph::generate() !!}
         {!! Twitter::generate() !!}
         @include(config('app.tema').'/frontend.layout.css')
+
+        @yield('customCSS')
+
     </head>
 
     <body>
@@ -20,6 +23,8 @@
             @include(config('app.tema').'/frontend.layout.footer')
 
             @include(config('app.tema').'/frontend.layout.js')
+            @yield('customJS')
+
         </main>
 
     </body>

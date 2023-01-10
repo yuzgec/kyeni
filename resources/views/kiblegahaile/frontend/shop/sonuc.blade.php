@@ -102,7 +102,7 @@
     <noscript><img height="1" width="1" style="display:none"  src="https://www.facebook.com/tr?id={{ config('settings.facebookPixel') }}&ev=PageView&noscript=1"/></noscript>
 
     <script>fbq('track', 'Purchase', {value: 1, currency: 'TRY'});</script>
-    @endsection
+@endsection
 @section('content')
     <div class="container">
         <div class="row justify-content-md-center">

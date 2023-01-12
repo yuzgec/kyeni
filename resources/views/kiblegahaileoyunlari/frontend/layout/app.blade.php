@@ -6,6 +6,7 @@
         {!! OpenGraph::generate() !!}
         {!! Twitter::generate() !!}
         @include(config('app.tema').'/frontend.layout.css')
+
         @yield('customCSS')
 
     </head>
